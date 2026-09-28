@@ -1,0 +1,167 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    Asset Inventory
+
+    Owner / Provenance
+    - All photographs used on this site are original images taken by Nicole Angelo Morente (nicole@example.com) - © Nicole Angelo Morente 2026. No third-party images, stock photographs, audio, video, or embedded content are used.
+
+    Images
+    - Images/logo.svg — logo photo by Nicole Angelo Morente — used in header and footer — All rights reserved.
+    - Images/Hero.jpg / Images/Hero-1200.jpg / Images/Hero-800.jpg / Images/Hero-400.jpg — hero photo by Nicole Angelo Morente — used on homepage hero — All rights reserved. Derivatives created: Hero-1200.jpg, Hero-800.jpg, Hero-400.jpg.
+    - Images/cactusPots.jpg — photo by Nicole Angelo Morente — used in photo-band — All rights reserved. Derivatives created: cactusPots-1200.jpg, cactusPots-800.jpg, cactusPots-400.jpg.
+    - Images/birdHouse.jpg — photo by Nicole Angelo Morente — used on About page — All rights reserved. Derivatives created: birdHouse-1200.jpg, birdHouse-800.jpg, birdHouse-400.jpg.
+
+    Fonts
+    - Site uses a system font stack only, no webfonts. See `css/styles.css` for the declared font stack. No additional licensing required.
+
+    SVG / Media / Embeds
+    - Images/Logo.svg — external SVG logo used in the header (served as a standalone SVG image file).
+    - Accessibility: the logo is presented with `alt="rooted together logo"` and the source SVG includes a `<title>` and `<desc>` to assist screen readers. I created it from Illustrator to be minimal and fast-loading.
+
+    Notes
+    - Image derivatives for responsive delivery: 1200px, 800px, 400px widths.
+    - All images are owned by Nicole Angelo Morente and may not be reused without permission.
+
+    Art direction
+    - Single-composition images are used across the site; the same frame and composition works across responsive breakpoints. If a different crop is needed for narrow viewports, provide an art-directed crop and we will swap the markup to a `<picture>` element referencing the alternate crop for that viewport.
+    -->
+    <title>About | Rooted Together</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Rooted Together home">
+          <img class="brand-logo" src="Images/Logo.svg" alt="rooted together logo" width="44" height="44" loading="eager" decoding="async">
+          <span>Rooted<br><em>Together</em></span>
+        </a>
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation">
+            Menu
+          </summary>
+          <nav aria-label="Mobile navigation">
+            <a href="index.html">Home</a
+            ><a class="active" href="about.html">About</a
+            ><a href="events.html">Events</a
+            ><a href="get-involved.html">Get involved</a
+            ><a href="resources.html">Resources</a
+            ><a href="contact.html">Contact</a>
+          </nav>
+        </details>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="about.html" aria-current="page">About</a>
+          <a href="events.html">Events</a>
+          <a href="get-involved.html">Get involved</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <a class="header-cta" href="get-involved.html"
+          >Join the garden</a
+        >
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="page-hero shell">
+        <p class="eyebrow">A little about us</p>
+        <h1>We made the green dream<br><em>into something real.</em></h1>
+        <p class="opening">
+          Rooted Together started with a family, a patch of neglected land,
+          and the idea that a shared garden could make this community feel more like
+          home.
+        </p>
+      </section>
+      <section class="split-section shell">
+        <div class="image-frame">
+          <img
+            src="Images/birdHouse-800.jpg"
+            srcset="Images/birdHouse-400.jpg 400w, Images/birdHouse-800.jpg 800w, Images/birdHouse-1200.jpg 1200w"
+            sizes="(min-width: 60rem) 50vw, 100vw"
+            width="800"
+            height="533"
+            alt="A wooden birdhouse surrounded by leafy garden plants"
+            class="about-hero"
+            loading="lazy"
+            decoding="async"
+          >
+        </div>
+        <div class="prose">
+          <p class="eyebrow">Our story</p>
+          <h2>From an empty lot to a place neighbors can build a green community</h2>
+          <p>
+            In 2025, a patch of unused land on Jupiter Street became a place to
+            gather. What started as a weekend cleanup now includes 36 garden
+            plots, a pollinator border, a shared tool shed, and a few volunteers.
+          </p>
+          <p>
+            We care for the garden together and share what it gives us. Whether
+            you are growing tomatoes for the first time or swapping garden knowledge and
+            tips after years of practice, there is room for everyone here.
+          </p>
+        </div>
+      </section>
+      <div class="values-section">
+        <div class="shell">
+          <p class="eyebrow">What guides us</p>
+          <h2>Our values</h2>
+          <div class="values-grid">
+            <article>
+              <span class="value-number">01</span>
+              <h3>Accessible</h3>
+              <p>
+                We share tools, knowledge, harvests, and the work of caring for
+                this place.
+              </p>
+            </article>
+            <article>
+              <span class="value-number">02</span>
+              <h3>Local</h3>
+              <p>
+                We grow in ways that respect our desert climate and the people
+                who call it home.
+              </p>
+            </article>
+            <article>
+              <span class="value-number">03</span>
+              <h3>Curiosity</h3>
+              <p>
+                Questions are encouraged. There is no perfect garden.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <a class="brand footer-brand" href="index.html"
+          ><span
+            >Rooted<br><em>Together</em></span></a
+        >
+        <div>
+          <p class="footer-title">Come find us</p>
+          <p>104 E Glade Ave<br>Mesa, AZ 85210</p>
+        </div>
+        <div>
+          <p class="footer-title">Say hello</p>
+          <a href="mailto:joinUS@rootedtogether.org">joinUS@rootedtogether.org</a
+          ><br><a href="tel:+14802876824">(480)287-6824</a>
+        </div>
+        <div>
+          <p class="footer-title">Explore</p>
+          <a href="events.html">Events</a><br><a href="get-involved.html"
+            >Get involved</a
+          ><br><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="shell footer-bottom">
+        <span>© 2026 Rooted Together</span>
+      </div>
+    </footer>
+  </body>
+</html>

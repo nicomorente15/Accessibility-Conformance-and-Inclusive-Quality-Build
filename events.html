@@ -1,0 +1,176 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+    Asset Inventory
+
+    Owner / Provenance
+    - All photographs used on this site are original images taken by Nicole Angelo Morente (nicole@example.com) - © Nicole Angelo Morente 2026. No third-party images, stock photographs, audio, video, or embedded content are used.
+
+    Images
+    - Images/logo.svg — logo photo by Nicole Angelo Morente — used in header and footer — All rights reserved.
+    - Images/Hero.jpg / Images/Hero-1200.jpg / Images/Hero-800.jpg / Images/Hero-400.jpg — hero photo by Nicole Angelo Morente — used on homepage hero — All rights reserved. Derivatives created: Hero-1200.jpg, Hero-800.jpg, Hero-400.jpg.
+    - Images/cactusPots.jpg — photo by Nicole Angelo Morente — used in photo-band — All rights reserved. Derivatives created: cactusPots-1200.jpg, cactusPots-800.jpg, cactusPots-400.jpg.
+    - Images/birdHouse.jpg — photo by Nicole Angelo Morente — used on About page — All rights reserved. Derivatives created: birdHouse-1200.jpg, birdHouse-800.jpg, birdHouse-400.jpg.
+
+    Fonts
+    - Site uses a system font stack only, no webfonts. See `css/styles.css` for the declared font stack. No additional licensing required.
+
+    SVG / Media / Embeds
+    - Images/Logo.svg — external SVG logo used in the header (served as a standalone SVG image file).
+    - Accessibility: the logo is presented with `alt="rooted together logo"` and the source SVG includes a `<title>` and `<desc>` to assist screen readers. I created it from Illustrator to be minimal and fast-loading.
+
+    Notes
+    - Image derivatives for responsive delivery: 1200px, 800px, 400px widths.
+    - All images are owned by Nicole Angelo Morente and may not be reused without permission.
+
+    Art direction
+    - Single-composition images are used across the site; the same frame and composition works across responsive breakpoints. If a different crop is needed for narrow viewports, provide an art-directed crop and we will swap the markup to a `<picture>` element referencing the alternate crop for that viewport.
+    -->
+    <title>Events | Rooted Together</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Rooted Together home">
+          <img class="brand-logo" src="Images/Logo.svg" alt="rooted together logo" width="44" height="44" loading="eager" decoding="async">
+          <span>Rooted<br><em>Together</em></span>
+        </a>
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation">
+            Menu
+          </summary>
+          <nav aria-label="Mobile navigation">
+            <a href="index.html">Home</a><a href="about.html">About</a
+            ><a class="active" href="events.html">Events</a
+            ><a href="get-involved.html">Get involved</a
+            ><a href="resources.html">Resources</a
+            ><a href="contact.html">Contact</a>
+          </nav>
+        </details>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a class="active" href="events.html">Events</a
+          ><a href="get-involved.html">Get involved</a
+          ><a href="resources.html">Resources</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+        <a class="header-cta" href="get-involved.html"
+          >Join the garden</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="page-hero shell">
+        <p class="eyebrow">October events</p>
+          <h1>October workdays<br><em>at 104 E Glade Ave.</em></h1>
+        <p class="lede">
+          Each October gathering has a clear job to do, from planting winter
+          beds to sorting finished compost. Bring water and wear closed shoes.
+        </p>
+      </section>
+      <div class="events-list shell">
+        <article class="event-row">
+          <div class="event-date large-date">
+            <strong>03</strong><span class="month-forest">OCT<br>2026</span>
+          </div>
+          <div class="event-row-copy">
+            <p class="card-label">Saturday · 9:00–11:00 AM · Workshop</p>
+            <h2>Fall planting party</h2>
+            <p>
+              Help us prepare the beds and tuck in cool-season greens. We will
+              cover what grows well in Mesa's fall weather, then finish by
+              labeling the new beds for the October growing season.
+            </p>
+            <p class="location">
+              Rooted Together Garden · 104 E Glade Ave
+            </p>
+          </div>
+          <a
+            class="round-arrow"
+            href="contact.html"
+            aria-label="Ask about fall planting party"
+            >Ask about this event</a
+          >
+        </article>
+        <article class="event-row">
+          <div class="event-date large-date">
+            <strong>17</strong><span>OCT<br>2026</span>
+          </div>
+          <div class="event-row-copy">
+            <p class="card-label">
+              Saturday · 10:00 AM–12:00 PM · Community day
+            </p>
+            <h2>Harvest and share</h2>
+            <p>
+              Gather what is ready, learn how to keep your harvest fresh, and
+              take home a small bundle of herbs or vegetables from the shared
+              harvest table. All ages are welcome.
+            </p>
+            <p class="location">
+              Rooted Together Garden · 104 E Glade Ave
+            </p>
+          </div>
+          <a
+            class="round-arrow"
+            href="contact.html"
+            aria-label="Ask about harvest and share"
+            >Ask about this event</a
+          >
+        </article>
+        <article class="event-row">
+          <div class="event-date large-date">
+            <strong>31</strong><span class="month-forest">OCT<br>2026</span>
+          </div>
+          <div class="event-row-copy">
+            <p class="card-label">Saturday · 9:00–10:30 AM · Workshop</p>
+            <h2>Compost 101</h2>
+            <p>
+              Learn how to balance kitchen scraps with dry leaves and build an
+              easy countertop-to-bin compost routine.
+            </p>
+            <p class="location">
+              Rooted Together Garden · 104 E Glade Ave
+            </p>
+          </div>
+          <a
+            class="round-arrow"
+            href="contact.html"
+            aria-label="Ask about Compost 101"
+            >Ask about this event</a
+          >
+        </article>
+      </div>
+  
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <a class="brand footer-brand" href="index.html"
+          ><span
+            >Rooted<br><em>Together</em></span></a
+        >
+        <div>
+          <p class="footer-title">Come find us</p>
+          <p>104 E Glade Ave<br>Mesa, AZ 85210</p>
+        </div>
+        <div>
+          <p class="footer-title">Say hello</p>
+          <a href="mailto:joinUS@rootedtogether.org">joinUS@rootedtogether.org</a
+          ><br><a href="tel:+14802876824">(480)287-6824</a>
+        </div>
+        <div>
+          <p class="footer-title">Explore</p>
+          <a href="events.html">Events</a><br><a href="get-involved.html"
+            >Get involved</a
+          ><br><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="shell footer-bottom">
+        <span>© 2026 Rooted Together</span>
+      </div>
+    </footer>
+  </body>
+</html>
